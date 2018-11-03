@@ -26,25 +26,16 @@ public class ProgramActivity extends AppCompatActivity {
         setContentView(R.layout.activity_program);
 
         Button submit = (Button)findViewById(R.id.submit);
-        submit.setBackgroundColor(Color.BLUE);
+        submit.setBackgroundColor(Color.rgb(240,240,230));
 
         Spinner year_spinner = (Spinner) findViewById(R.id.year_spinner);
         final ArrayList year_data = new ArrayList();
-        year_data.add("2000");
-        year_data.add("2001");
-        year_data.add("2002");
-        year_data.add("1995");
-        year_data.add("1995");
-        year_data.add("1995");
-        year_data.add("1995");
-        year_data.add("1995");
-        year_data.add("1995");
-        year_data.add("1995");
-        year_data.add("1995");
-        year_data.add("1995");
-        year_data.add("1995");
-        year_data.add("1995");
+        year_data.add("2015");
         year_data.add("2016");
+        year_data.add("2017");
+        year_data.add("2018");
+        year_data.add("2019");
+        year_data.add("2020");
 
         ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_dropdown_item_1line, year_data);
         year_spinner.setAdapter(adapter);

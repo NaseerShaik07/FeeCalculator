@@ -83,6 +83,98 @@ public class FeeDetailsActivity extends AppCompatActivity {
                 trans_fee_view.setText(String.valueOf(trans_fee));
                 total_fee_view.setText(String.valueOf(total));
                 break;
+            case "2017":
+                tuition_fee = 95000;
+                exam_fee = 1130;
+
+                if(prog.equals("CSE") || prog.equals("ECE") || prog.equals("EEE") || prog.equals("MEC")){
+                    acc_fee = 1000;
+                }
+
+                lib_fee = 250;
+
+
+                if(std_type.equals("boarder")){
+                    hostal_fee = 90000;
+                }else{
+                    trans_fee = 12000;
+                }
+                total = tuition_fee + exam_fee + acc_fee + lib_fee + hostal_fee + trans_fee;
+                acc_fee_view.setText(String.valueOf(acc_fee));
+                hostal_fee_view.setText(String.valueOf(hostal_fee));
+                tuition_fee_view.setText(String.valueOf(tuition_fee));
+                trans_fee_view.setText(String.valueOf(trans_fee));
+                total_fee_view.setText(String.valueOf(total));
+                break;
+            case "2018":
+                tuition_fee = 105000;
+                exam_fee = 1130;
+
+                if(prog.equals("CSE") || prog.equals("ECE") || prog.equals("EEE") || prog.equals("MEC")){
+                    acc_fee = 1000;
+                }
+
+                lib_fee = 250;
+
+
+                if(std_type.equals("boarder")){
+                    hostal_fee = 95000;
+                }else{
+                    trans_fee = 13000;
+                }
+                total = tuition_fee + exam_fee + acc_fee + lib_fee + hostal_fee + trans_fee;
+                acc_fee_view.setText(String.valueOf(acc_fee));
+                hostal_fee_view.setText(String.valueOf(hostal_fee));
+                tuition_fee_view.setText(String.valueOf(tuition_fee));
+                trans_fee_view.setText(String.valueOf(trans_fee));
+                total_fee_view.setText(String.valueOf(total));
+                break;
+            case "2019":
+                tuition_fee = 115000;
+                exam_fee = 1130;
+
+                if(prog.equals("CSE") || prog.equals("ECE") || prog.equals("EEE") || prog.equals("MEC")){
+                    acc_fee = 1000;
+                }
+
+                lib_fee = 250;
+
+
+                if(std_type.equals("boarder")){
+                    hostal_fee = 100000;
+                }else{
+                    trans_fee = 14000;
+                }
+                total = tuition_fee + exam_fee + acc_fee + lib_fee + hostal_fee + trans_fee;
+                acc_fee_view.setText(String.valueOf(acc_fee));
+                hostal_fee_view.setText(String.valueOf(hostal_fee));
+                tuition_fee_view.setText(String.valueOf(tuition_fee));
+                trans_fee_view.setText(String.valueOf(trans_fee));
+                total_fee_view.setText(String.valueOf(total));
+                break;
+            case "2020":
+                tuition_fee = 125000;
+                exam_fee = 1130;
+
+                if(prog.equals("CSE") || prog.equals("ECE") || prog.equals("EEE") || prog.equals("MEC")){
+                    acc_fee = 1000;
+                }
+
+                lib_fee = 250;
+
+
+                if(std_type.equals("boarder")){
+                    hostal_fee = 105000;
+                }else{
+                    trans_fee = 15000;
+                }
+                total = tuition_fee + exam_fee + acc_fee + lib_fee + hostal_fee + trans_fee;
+                acc_fee_view.setText(String.valueOf(acc_fee));
+                hostal_fee_view.setText(String.valueOf(hostal_fee));
+                tuition_fee_view.setText(String.valueOf(tuition_fee));
+                trans_fee_view.setText(String.valueOf(trans_fee));
+                total_fee_view.setText(String.valueOf(total));
+                break;
 
         }
 

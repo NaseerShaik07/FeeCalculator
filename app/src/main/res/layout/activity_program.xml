@@ -72,6 +72,8 @@
             android:id="@+id/day_scholar"
             android:textSize="20sp"
             android:text="Day Scholar"
+            android:defaultFocusHighlightEnabled="true"
+            android:focusedByDefault="true"
             android:onClick="radioClick"
 
             />

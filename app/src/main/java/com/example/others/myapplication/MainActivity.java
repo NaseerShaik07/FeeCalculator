@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,26 +16,43 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText user_name_view = (EditText)findViewById(R.id.user_name);
-        EditText password_view = (EditText)findViewById(R.id.password);
+        final EditText user_name_view = (EditText)findViewById(R.id.user_name);
+        final EditText password_view = (EditText)findViewById(R.id.password);
         Button login = (Button)findViewById(R.id.log_but);
 
-        String user_name = user_name_view.getText().toString();
-        String password = password_view.getText().toString();
 
 
-        login.setBackgroundColor(Color.CYAN);
+        login.setBackgroundColor(Color.rgb(240,240,240));
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Todo: do authentication of user
+                final String user_name = user_name_view.getText().toString();
+                final String password = password_view.getText().toString();
 
-                Intent intent = new Intent(MainActivity.this, ProgramActivity.class);
-                startActivity(intent);
+                if(user_name.equals("") || password.equals("")){
+                    Toast.makeText(MainActivity.this,"username and password are required", Toast.LENGTH_SHORT).show();
+                }
+                else {
+
+                    Intent intent = new Intent(MainActivity.this, ProgramActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
+
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        final EditText user_name_view = (EditText)findViewById(R.id.user_name);
+        final EditText password_view = (EditText)findViewById(R.id.password);
+
+        user_name_view.setText("");
+        password_view.setText("");
 
     }
 }
